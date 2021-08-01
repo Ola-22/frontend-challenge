@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app_layout{
+  background: linear-gradient(62.95deg, #6663E8 0.64%, #AF68EA 100%);
+  position: relative;
+  margin: auto;
+  width: 1147px;
+  height: 776px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width: 400px) {
+  .app_layout{
+    flex-direction: column;
+    display: flex;
+    height: 776px;
   }
-  to {
-    transform: rotate(360deg);
+}
+.faq_layout{
+  width: 1023px;
+  height: 528px;
+  display: flex;
+  top: 124px;
+  position: relative;
+}
+
+@media(max-width: 400px) {
+  .faq_layout{
+    top: -50px;
+  }
+}
+
+.img_faq{
+  position: absolute;
+  bottom: 19%; 
+  z-index: 100;
+}
+@media(max-width: 400px) {
+  .img_faq{
+    width: 80px;
+    top: 1%;
+    left: 10%;
+    z-index: 9998;
+    position: absolute;
+  }
+}
+
+.faq_main{
+  width: 891px;
+  height: 528px;
+  margin-left: 128px;
+  top: 0;
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+@media(max-width: 400px) {
+  .faq_main{
+    flex-direction: column;
+    display: flex;
+    overflow-x:hidden;
+    width: 312px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+}
+
+
+.faq_content{
+  margin-top: 110px;
+  display: flex;
+  z-index: 2;
+}
+
+@media(max-width: 400px) {
+  .faq_content{
+    flex-direction: column;
+    display: flex;
+    margin-top: 55px;
+    z-index: 1000;
+  }
+}
+
+
+@media(max-width: 400px) {
+  .womanImg{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    margin-left: 70px;
+    top: -60px;
+    filter: drop-shadow(0px 25px 2px #E5E5E5);
+
+  }
+}
+
+
+
+@media(max-width: 400px) {
+  .womanImg:before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    top: 193px;
+  
   }
 }
