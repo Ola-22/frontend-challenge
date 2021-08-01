@@ -1,23 +1,25 @@
-import logo from "./logo.svg";
 import "./App.css";
+import AppLayout from "./Layouts/AppLayout";
+import Home from "./Pages/Home";
+import FAQLayout from "./Layouts/FAQLayout";
+import { GroupImg, WomanImg } from "./assets/img/img";
+import { Data } from "./Data/Data";
+import Accordion from "./Components/Accordion";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppLayout>
+        <FAQLayout>
+          <img src={GroupImg} alt="img" className="img_faq" />
+          <div className="faq_main">
+            <div className="faq_content">
+              <img src={WomanImg} alt="img" className="womanImg" />
+              <Accordion />
+            </div>
+          </div>
+        </FAQLayout>
+      </AppLayout>
     </div>
   );
 }
