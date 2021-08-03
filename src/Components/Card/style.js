@@ -15,7 +15,8 @@ export const CardContainer = styled.div`
   flex-direction: column;
   margin: auto;
   flex-wrap: wrap;
-  margin-top: 3%;
+  margin-top: 2%;
+  margin-bottom: 3.2%;
   padding-left: 20px;
   font-family: Roboto;
   & > img:first-of-type {
@@ -46,6 +47,7 @@ export const CardContainer = styled.div`
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 0.05em;
+    cursor: pointer;
   }
 `;
 
@@ -79,6 +81,7 @@ export const CardBox = styled.div`
     font-weight: bold;
     font-family: Roboto;
     margin-right: 18px;
+    cursor: pointer;
   }
 `;
 
@@ -92,6 +95,7 @@ export const CardBody = styled.div`
     border-radius: 48px;
     padding: 8px;
     color: white;
+    cursor: pointer;
     &:last-child {
       margin-left: 12px;
     }
