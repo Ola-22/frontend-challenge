@@ -52,3 +52,12 @@
   position: absolute;
   top: 23%;
 }
+
+
+.CardMain{
+  position: relative;
+  border: 6px solid #FC3170;
+  border-radius: 85px;
+  padding: 20px;
+  height: 100vh;
+}

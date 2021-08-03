@@ -3,3 +3,7 @@ export { default as GroupImg } from "./Group.png";
 export { default as Vector1 } from "./vector1.png";
 export { default as Vector2 } from "./vector2.png";
 export { default as Vector3 } from "./vector3.png";
+export { default as BannerImage } from "./banner_image.png";
+export { default as avatarImage } from "./avatar_image.png";
+export { default as heartIcons } from "./heart_icons.png";
+export { default as accountIcon } from "./account_icon.png";

@@ -1,13 +1,11 @@
 import "./App.css";
-import FAQPage from "./Pages/FAQPAge";
-import Leaf from "./Pages/Leaf";
+import Card from "./Components/Card";
 
 function App() {
   return (
     <div className="App">
-      {/* <FAQPage /> */}
-      <div style={{ position: "relative", background: "#998235" }}>
-        <Leaf />
+      <div className="CardMain">
+        <Card />
       </div>
     </div>
   );
