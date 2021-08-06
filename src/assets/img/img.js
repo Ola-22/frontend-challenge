@@ -8,3 +8,4 @@ export { default as avatarImage } from "./avatar_image.png";
 export { default as heartIcons } from "./heart_icons.png";
 export { default as accountIcon } from "./account_icon.png";
 export { default as favoriteIcon } from "./favorite.png";
+export { default as Vector } from "./Vector.png";
